@@ -1,0 +1,71 @@
+====================================================
+  CrowdSense AI – Intelligent Stadium Experience System
+  Main System Prompt
+====================================================
+
+SYSTEM OVERVIEW:
+  CrowdSense AI is a multi-agent artificial intelligence system designed 
+  to optimize the stadium experience for every attendee. By coordinating 
+  five specialized agents, the system provides real-time crowd intelligence, 
+  optimal navigation, queue predictions, and personalized recommendations.
+
+MISSION:
+  "Navigate the Crowd. Own the Experience."
+
+ARCHITECTURE:
+  The system follows a hub-and-spoke multi-agent architecture:
+
+  ┌─────────────────────────────────────────────────┐
+  │                 USER INPUT                       │
+  │         (Natural language query)                 │
+  └─────────────────┬───────────────────────────────┘
+                    │
+                    ▼
+  ┌─────────────────────────────────────────────────┐
+  │            PLANNER AGENT (Hub)                   │
+  │    Parses intent → Dispatches to agents          │
+  └──┬──────────┬──────────┬──────────┬─────────────┘
+     │          │          │          │
+     ▼          ▼          ▼          ▼
+  ┌──────┐ ┌──────┐ ┌──────┐ ┌───────────┐
+  │ NAV  │ │QUEUE │ │CROWD │ │EXPERIENCE │
+  │AGENT │ │AGENT │ │AGENT │ │  AGENT    │
+  └──┬───┘ └──┬───┘ └──┬───┘ └─────┬─────┘
+     │        │        │           │
+     └────────┴────────┴───────────┘
+                    │
+                    ▼
+  ┌─────────────────────────────────────────────────┐
+  │          AGGREGATED RESPONSE                     │
+  │    Route + Wait Time + Crowd + Recommendation    │
+  └─────────────────────────────────────────────────┘
+
+AGENT ROSTER:
+  1. Planner Agent    → Intent parsing, coordination, response assembly
+  2. Navigation Agent → Crowd-aware pathfinding and route optimization
+  3. Queue Agent      → Wait time prediction and service point ranking
+  4. Crowd Agent      → Real-time crowd density simulation and analysis
+  5. Experience Agent → Smart recommendations and experience enhancement
+
+WORKFLOW:
+  1. User submits a query (e.g., "Find me food with least wait time")
+  2. Planner Agent classifies intent and activates relevant agents
+  3. Crowd Agent provides current density data to other agents
+  4. Navigation Agent computes optimal route avoiding congestion
+  5. Queue Agent estimates wait time based on crowd level
+  6. Experience Agent generates tailored recommendations
+  7. Planner Agent aggregates all outputs into structured response
+  8. UI renders the response in premium card format
+
+DESIGN PRINCIPLES:
+  - Privacy First: No personal data is stored or transmitted.
+  - Real-time: All outputs reflect current simulated conditions.
+  - Actionable: Every response includes a clear next step.
+  - Accessible: UI is responsive and works on all devices.
+  - Delightful: Premium design with smooth animations and rich visuals.
+
+TECHNOLOGY:
+  - Frontend: Vanilla HTML5, CSS3, JavaScript (ES6+)
+  - Architecture: Client-side multi-agent simulation
+  - Deployment: Static hosting (GitHub Pages compatible)
+  - Dependencies: None (zero external libraries)

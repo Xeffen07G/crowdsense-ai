@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CrowdSense AI — Intelligent Stadium Experience System">
+  <title>CrowdSense AI — Premium Experience Optimization</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="grid-overlay"></div>
+
+  <!-- NAV -->
+  <nav>
+    <div class="navbar-brand">
+      <h2>CrowdSense AI</h2>
+    </div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#features">Features</a>
+      <a href="#demo">Optimize</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <h1>
+      Navigate the Crowd.<br>
+      <span style="background: var(--accent-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Own the Experience.</span>
+    </h1>
+    <p>The intelligent multi-agent operating system designed to optimize stadium movement, predict waiting times, and enhance attendee satisfaction in real-time.</p>
+    <a href="#demo" class="btn">Explore Live Demo</a>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features" class="features">
+    <div class="card">
+      <span style="font-size: 32px">🧠</span>
+      <span>Multi-Agent Intelligence</span>
+      <p style="font-size: 14px; color: var(--text-secondary); font-weight: 400; text-align: center;">5 specialized agents coordinating to solve complex logistics.</p>
+    </div>
+    <div class="card">
+      <span style="font-size: 32px">📍</span>
+      <span>Smart Navigation</span>
+      <p style="font-size: 14px; color: var(--text-secondary); font-weight: 400; text-align: center;">Context-aware pathfinding that bypasses high-density zones.</p>
+    </div>
+    <div class="card">
+      <span style="font-size: 32px">⏱</span>
+      <span>Queue Prediction</span>
+      <p style="font-size: 14px; color: var(--text-secondary); font-weight: 400; text-align: center;">Dynamic wait-time estimation based on live sensor data.</p>
+    </div>
+    <div class="card">
+      <span style="font-size: 32px">🔥</span>
+      <span>Crowd Monitoring</span>
+      <p style="font-size: 14px; color: var(--text-secondary); font-weight: 400; text-align: center;">Real-time density simulations for proactive decision support.</p>
+    </div>
+  </section>
+
+  <!-- DEMO -->
+  <section id="demo" class="demo">
+    <h2>Live Experience Optimizer</h2>
+    
+    <div class="demo-container">
+      <p style="margin-bottom: 24px; color: var(--text-secondary); font-size: 14px;">Enter a location or request (e.g., "Fastest route to Section B")</p>
+      <div style="display: flex; flex-direction: column; gap: 8px;">
+        <input id="userInput" placeholder="Ask the Intelligent Planner..." autocomplete="off">
+        <button onclick="handleGenerate()">Optimize Experience</button>
+      </div>
+    </div>
+
+    <!-- Output will be injected here as Premium Cards -->
+    <div id="output"></div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div style="background: var(--bg-card); padding: var(--space-3xl); border-radius: var(--radius-2xl); border: 1px solid var(--bg-glass-border);">
+      <h2>Get in Touch</h2>
+      <p style="color: var(--text-secondary); margin-bottom: 24px;">Transform your stadium experience with CrowdSense AI.</p>
+      <p style="font-weight: 700; color: var(--accent-primary);">crowdsense.ai@gmail.com</p>
+    </div>
+  </section>
+
+  <footer>
+    <div style="opacity: 0.6">Powered by Multi-Agent AI Architecture</div>
+    <div style="margin-top: 8px; font-size: 12px; opacity: 0.4">© 2026 CrowdSense AI. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+{
+  "query": "I want to grab food during halftime, what's the best option?",
+  "timestamp": "2026-04-16T19:15:00+05:30",
+  "intent": "food_navigation_queue",
+  "agents_activated": [
+    "planner_agent",
+    "crowd_agent",
+    "navigation_agent",
+    "queue_agent",
+    "experience_agent"
+  ],
+  "response": {
+    "route": {
+      "summary": "Seat → Concourse South → Food Court Beta",
+      "steps": [
+        "Exit your row to the right aisle",
+        "Head south along Concourse South corridor",
+        "Pass Restroom Block 3 on your left",
+        "Food Court Beta is 40m ahead on the right"
+      ],
+      "estimated_walk_time": "3 min",
+      "distance": "120m",
+      "congestion_avoided": true,
+      "avoided_zone": "Concourse North (High density)"
+    },
+    "wait_time": {
+      "estimated_minutes": 6,
+      "range": "5 – 8 min",
+      "crowd_level": "medium",
+      "service_point": "Food Court Beta",
+      "recommendation": "Food Court Beta has 40% shorter queue than Alpha right now",
+      "best_time_to_visit": "Visit within the next 2 minutes before halftime rush peaks"
+    },
+    "crowd_level": {
+      "overall": "medium",
+      "density_percentage": 58,
+      "zone_report": {
+        "Section A": { "level": "high", "percentage": 78, "trend": "stable" },
+        "Section B": { "level": "medium", "percentage": 55, "trend": "decreasing" },
+        "Concourse North": { "level": "high", "percentage": 82, "trend": "increasing" },
+        "Concourse South": { "level": "low", "percentage": 35, "trend": "stable" },
+        "Food Court Alpha": { "level": "high", "percentage": 88, "trend": "increasing" },
+        "Food Court Beta": { "level": "medium", "percentage": 52, "trend": "stable" }
+      },
+      "alert": "⚠️ Food Court Alpha approaching capacity — consider alternatives"
+    },
+    "recommendation": {
+      "primary": "🍔 Head to Food Court Beta via the South Concourse — it's 40% less crowded than Alpha right now!",
+      "secondary": "💡 Pro tip: Order ahead at the self-service kiosk to skip the counter queue entirely.",
+      "category": "dining",
+      "urgency": "medium",
+      "icon": "🍔"
+    }
+  },
+  "meta": {
+    "processed_by": "planner_agent",
+    "agents_response_time_ms": 12,
+    "confidence": 0.92,
+    "model": "crowdsense-ai-v1.0"
+  }
+}
